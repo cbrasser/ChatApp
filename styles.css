@@ -1,0 +1,29 @@
+.container {
+    height: 100vh;
+    width: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.chat {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: gray;
+}
+.header {
+
+}
+.header input {
+
+}
+
+.messages {
+    flex-grow: 1;
+}
+.input {
+
+}
+

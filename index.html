@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Chat App</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Your name">
+    <meta property="og:title" content="Your Page Title">
+    <meta property="og:description" content="Brief description">
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+
+<body class="body">
+
+
+    <div class="container">
+        <div class="chat">
+            <div class="header">
+                <input type="text" id="username" placeholder="Benutzername">
+            </div>
+            <div class="messages" id="messages">
+
+            </div>
+            <div class="input">
+                <input type="text" id="input" placeholder="Nachricht">
+                <button id="submitButton">senden</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script type="module">
+
+        let messages = [
+            {
+                author: "Ding",
+                message: "Hallo zusammen"
+            },
+            {
+                author: "Dong",
+                message: "Hallo zurück"
+            }
+        ]
+
+        function updateMessages() {
+
+        }
+
+        function submitMessage() {
+
+        }
+
+        document.getElementById("submitButton").onclick = submitMessage;
+    </script>
+
+</body>
+
+</html>
