@@ -4,27 +4,95 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 14px;
 }
 .chat {
     width: 500px;
     height: 500px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: gray;
 }
 .header {
-
+    background-color:darkseagreen;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
 }
 .header input {
-
+    background-color: rgb(132, 167, 132);
+    border: none;
+    outline: none;
+    color: black;
+    font-size: 1.1rem;
+    border-bottom: 1px solid black;
+    border-radius: 4px;
+    border: none;
 }
-
+.header h1 {
+    margin: 0;
+}
 .messages {
+    padding: 8px;
     flex-grow: 1;
+    overflow-y: scroll;
 }
 .input {
-
+    padding: 8px;
+ background-color: beige;
+ display: flex;
+ justify-content: space-between;
 }
 
+.message {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 8px;
+}
+.message.own {
+    justify-content: flex-end;
+}
+.message.own .author {
+    display: none;
+}
+.message .author {
+    background-color: aquamarine;
+    border-radius: 20px;
+    padding: 10px;
+    margin-right: 10px;
+}
+.message.hidden {
+    display: none;
+}
+
+.message .text {
+    background-color: lightgreen;
+    padding: 4px;
+    border-radius: 8px;
+    width: max-content;
+}
+
+button {
+    padding: 0.4rem;
+    background-color:coral;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+button:hover {
+    transform: scale(1.05);
+}
+button i {
+    margin-right: 4px;
+}
+
+
+#input {
+    background-color: rgb(228, 228, 213);
+    border: none;
+    border-radius: 4px;
+}

@@ -12,8 +12,9 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 
     <link rel="stylesheet" href="styles.css">
-
+    <script src="https://kit.fontawesome.com/c5148f3a1a.js" crossorigin="anonymous"></script>
 </head>
+
 
 
 <body class="body">
@@ -22,43 +23,26 @@
     <div class="container">
         <div class="chat">
             <div class="header">
-                <input type="text" id="username" placeholder="Benutzername">
+                <h1>Chat App</h1>
+                <div>
+                    <i class="fa-sharp fa-solid fa-user"></i><input type="text" id="username"
+                        placeholder="Benutzername">
+                </div>
             </div>
             <div class="messages" id="messages">
 
             </div>
             <div class="input">
                 <input type="text" id="input" placeholder="Nachricht">
-                <button id="submitButton">senden</button>
+                <button id="submitButton"><i class="fa-solid fa-arrow-up-from-bracket"></i>senden</button>
             </div>
         </div>
 
     </div>
 
-    <script type="module">
+    <script type="module" src="script.js">
 
-        let messages = [
-            {
-                author: "Ding",
-                message: "Hallo zusammen"
-            },
-            {
-                author: "Dong",
-                message: "Hallo zurück"
-            }
-        ]
-
-        function updateMessages() {
-
-        }
-
-        function submitMessage() {
-
-        }
-
-        document.getElementById("submitButton").onclick = submitMessage;
     </script>
-
 </body>
 
 </html>
